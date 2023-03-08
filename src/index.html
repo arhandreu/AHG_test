@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Validate Credit Card Numbers</title>
+</head>
+<body>
+    <div class="container">
+      <header class="container__header">
+          <h1>Проверка кредитных карт</h1>          
+      </header>
+  
+      <div class="validation-form">
+          
+        <ul class="validation-form__cards-list cards-list">
+            <li class="cards-list__item cards-list__item_mir" title="Mir"><img src="../src/img/mir.png"><span>Мир</span></li>
+            <li class="cards-list__item cards-list__item_visa" title="Visa"><img src="../src/img/visa.png"><span>Visa</span></li>
+            <li class="cards-list__item cards-list__item_mastercard" title="Mastercard"><img src="../src/img/mastercard.png"><span>Mastercard</span></li>
+            <li class="cards-list__item cards-list__item_amex" title="American Express"><img src="../src/img/american_express.png"><span>American Express</span></li>
+            <li class="cards-list__item cards-list__item_discover" title="Discover"><img src="../src/img/discover.jpeg"><span>Discover</span></li>
+            <li class="cards-list__item cards-list__item_jcb" title="JCB"><img src="../src/img/jcb.png"><span>JCB International</span></li>
+            <li class="cards-list__item cards-list__item_diners-club" title="Diners Club"><img src="../src/img/diners.jpg"><span>Diners Club</span></li>
+        </ul>
+  
+        <form id="form" class="validation-form__form" novalidate="novalidate">
+            <div class="validation-form__form-group">
+                <input class="validation-form__input" id="card_number" name="card_number" type="text" placeholder="Введите номер карты без пробелов" data-original-title="" title="">
+                <button id="submitform" class="validation-form__btn">Проверка</button>
+            </div>
+        </form>
+  
+        <div class="validation-form__no-type">
+          <p>Не удалось определить тип карты!</p>
+        </div>
+  
+        <div class="validation-form__no-valid">
+            <p>Неверный номер карты</p>
+        </div>
+  
+        <div class="validation-form__valid">
+          <p>Проверка карты прошла успешно!</p>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
